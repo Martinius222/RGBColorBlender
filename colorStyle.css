@@ -63,4 +63,5 @@ button {
     height: 3em;
     margin: 0 10px;
     border-radius: 50px;
+    touch-action: manipulation;
 }
