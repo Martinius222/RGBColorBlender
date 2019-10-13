@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Kanit&display=swap');
+html {
+    font-family: 'Fascinate Inline', cursive;
+}
+
+body {
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#blendApp {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#blendArea {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1em;
+    background-color: aquamarine;
+    border: solid black 5px;
+    border-radius: 100%;
+}
+
+.inputContainers {
+    margin-bottom: 1em;
+}
+
+input {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 40px;
+    text-align: center;
+    width: 2em;
+    height: 1em;
+    border: none;
+}
+
+button {
+    font-family: 'Kanit', sans-serif;
+    border: none;
+    background-color: black;
+    color: ivory;
+    width: 3em;
+    height: 3em;
+    margin: 0 10px;
+    border-radius: 50px;
+}

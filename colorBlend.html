@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="colorStyle.css">
+    <title>Color Blender</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+<body>
+
+    <div id="blendApp">
+        <h1>RGB Color Blender</h1>
+        <div id="blendArea" :style="RGBColorBlend"></div>
+        <div id="MainInputsContainer">
+            <div id="redInputContainer" class="inputContainers">
+                <h2>RED</h2>
+                <button class="DecreaseByTen inputButtons" @click="amountRed -= 10">-10</button>
+                <button class="DecreaseByOne inputButtons" @click="amountRed--">-1</button>
+                <input type="text" v-model="amountRed">
+                <button class="IncreaseByOne inputButtons" @click="amountRed++">+1</button>
+                <button class="IncreaseByTen inputButtons" @click="amountRed += 10">+10</button>
+            </div>
+           
+            <div id="greenInputContainer" class="inputContainers">
+                <h2>GREEN</h2>
+                <button class="DecreaseByTen inputButtons" @click="amountGreen -= 10">-10</button>
+                <button class="DecreaseByOne inputButtons" @click="amountGreen--">-1</button>
+                <input type="text" v-model="amountGreen">
+                <button class="IncreaseByOne inputButtons" @click="amountGreen++">+1</button>
+                <button class="IncreaseByTen inputButtons" @click="amountGreen += 10">+10</button>
+            </div>
+            <div id="blueInputContainer" class="inputContainers">
+                <h2>BLUE</h2>
+                <button class="DecreaseByTen inputButtons" @click="amountBlue -= 10">-10</button>
+                <button class="DecreaseByOne inputButtons" @click="amountBlue--">-1</button>
+                <input type="text" v-model="amountBlue">
+                <button class="IncreaseByOne inputButtons" @click="amountBlue++">+1</button>
+                <button class="IncreaseByTen inputButtons" @click="amountBlue += 10">+10</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    
+    <script src="colorScript.js"></script>
+</body>
+</html>
