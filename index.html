@@ -15,29 +15,20 @@
         <div id="blendArea" :style="RGBColorBlend"></div>
         <div id="MainInputsContainer">
             <div id="redInputContainer" class="inputContainers">
-                <h2>RED</h2>
-                <button class="DecreaseByTen inputButtons" @click="amountRed -= 10">-10</button>
-                <button class="DecreaseByOne inputButtons" @click="amountRed--">-1</button>
-                <input type="number" v-model="amountRed">
-                <button class="IncreaseByOne inputButtons" @click="amountRed++">+1</button>
-                <button class="IncreaseByTen inputButtons" @click="amountRed += 10">+10</button>
+                <h2>{{amountRed}} RED</h2>
+                <input class="scroll" v-model="amountRed" type="range" min="0" max="255">
+                
             </div>
            
             <div id="greenInputContainer" class="inputContainers">
-                <h2>GREEN</h2>
-                <button class="DecreaseByTen inputButtons" @click="amountGreen -= 10">-10</button>
-                <button class="DecreaseByOne inputButtons" @click="amountGreen--">-1</button>
-                <input type="number" v-model="amountGreen">
-                <button class="IncreaseByOne inputButtons" @click="amountGreen++">+1</button>
-                <button class="IncreaseByTen inputButtons" @click="amountGreen += 10">+10</button>
+                <h2>{{amountGreen}} GREEN</h2>
+                <input class="scroll" v-model="amountGreen" type="range" min="0" max="255">
+                
             </div>
             <div id="blueInputContainer" class="inputContainers">
-                <h2>BLUE</h2>
-                <button class="DecreaseByTen inputButtons" @click="amountBlue -= 10">-10</button>
-                <button class="DecreaseByOne inputButtons" @click="amountBlue--">-1</button>
-                <input type="number" v-model="amountBlue">
-                <button class="IncreaseByOne inputButtons" @click="amountBlue++">+1</button>
-                <button class="IncreaseByTen inputButtons" @click="amountBlue += 10">+10</button>
+                <h2>{{amountBlue}} BLUE</h2>
+                <input class="scroll" v-model="amountBlue" type="range" min="0" max="255">
+                
             </div>
         </div>
 
