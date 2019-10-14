@@ -33,16 +33,32 @@ h2 {
 }
 
 #blendArea {
-    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
     height: 130px;
     margin-bottom: 1em;
     background-color: aquamarine;
-    border: solid black 5px;
-    border-radius: 100%;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+
+#hexConversion {
+    font-family: 'Kanit', sans-serif;
+    background-color: aliceblue;
+    padding: 0.2em 0.6em;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .inputContainers {
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -68,7 +84,7 @@ button {
 
 input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-    width: 100%; /* Specific width is required for Firefox. */
+    width: 200%; /* Specific width is required for Firefox. */
     background: transparent; /* Otherwise white in Chrome */
   }
   
@@ -92,6 +108,9 @@ input[type=range]::-webkit-slider-thumb {
     background: #fff;
     border-radius: 1.3px;
     border: 0.5px solid #010101;
+    outline: none;
+    
+    
   }
 
 

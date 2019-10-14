@@ -12,29 +12,25 @@
 
     <div id="blendApp">
         <h1>RGB Color Blender</h1>
-        <div id="blendArea" :style="RGBColorBlend"></div>
+        <div id="blendArea" :style="RGBColorBlend">
+            <p id="hexConversion">{{convertToHex}}</p>
+        </div>
         <div id="MainInputsContainer">
             <div id="redInputContainer" class="inputContainers">
                 <h2>{{amountRed}} RED</h2>
                 <input class="scroll" v-model="amountRed" type="range" min="0" max="255">
-                
             </div>
            
             <div id="greenInputContainer" class="inputContainers">
                 <h2>{{amountGreen}} GREEN</h2>
                 <input class="scroll" v-model="amountGreen" type="range" min="0" max="255">
-                
             </div>
+
             <div id="blueInputContainer" class="inputContainers">
                 <h2>{{amountBlue}} BLUE</h2>
                 <input class="scroll" v-model="amountBlue" type="range" min="0" max="255">
-                
             </div>
         </div>
-
-
-
-
     </div>
     
     <script src="colorScript.js"></script>

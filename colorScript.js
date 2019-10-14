@@ -8,7 +8,11 @@ new Vue ({
     },
 
     methods: {
-
+        convertToHexa: function() {
+            let r = parseInt(this.amountRed).toString(16).toUpperCase();
+            return r;
+            
+        }
     },
 
     computed: {
@@ -18,6 +22,15 @@ new Vue ({
                                         this.amountGreen + ", " +
                                         this.amountBlue + ")"
             }
+        },
+
+        convertToHex: function() {
+            
+            let r = parseInt(this.amountRed).toString(16).toUpperCase();
+            let g = parseInt(this.amountGreen).toString(16).toUpperCase();
+            let b = parseInt(this.amountBlue).toString(16).toUpperCase();
+            return "#" + r + g + b;
+            
         }
-    },
+    }
 })
