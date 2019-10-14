@@ -53,7 +53,12 @@ h2 {
     text-align: center;
 }
 
+#mainInputsContainer {
+    width: 85%;
+}
+
 .inputContainers {
+    width: 100%;
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
@@ -84,7 +89,7 @@ button {
 
 input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-    width: 200%; /* Specific width is required for Firefox. */
+    width: 100%; /* Specific width is required for Firefox. */
     background: transparent; /* Otherwise white in Chrome */
   }
   
