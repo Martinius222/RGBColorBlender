@@ -47,6 +47,7 @@ h2 {
 #hexConversion {
     font-family: 'Kanit', sans-serif;
     background-color: aliceblue;
+    min-width: 100px;
     padding: 0.2em 0.6em;
     border: 2px solid black;
     border-radius: 5px;
